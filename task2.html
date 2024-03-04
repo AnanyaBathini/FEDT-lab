@@ -1,104 +1,202 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #B4B4B8;
 
+        }
 
-<html>
-    <head>
-        <meta charset="utf-8">
-       
-        <title>Portfolio using HTML</title>
-        <link rel="stylesheet" href="./styles1.css">
+        #navbar {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #343a40;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dee2e6;
+            margin: 40px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: left;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 4px;
+            
+        }
+
+        input[type="submit"]:hover {
+            background-color: #23272b;
+        }
         
-    </head>
-    <body>
-    
-        <nav id="navbar" class="nav">
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="home">
-            <h1>Hey,</h1>
-            <h1>I am Ananya Bathini</h1>
-            <p id="welcome-section">A Computer Science Undergraduate student who is very enthuastic to learn new technologies and advance in life through updating skills.</p>
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <center>
+            <div id="name" >
+                <h1 style="color:#638889">Hey,</h1>
+            <h1 style= "color:#F2C18D">I am Ananya Bathini.</h1>
+            
+            </div>
+        </center>
+        
+        <p id="welcome-section">A Computer Science Undergraduate student who is very enthusiastic to learn new technologies and advance in life through updating skills.</p>
         <hr>
-        
         <h2>Academics</h2>
-        
         <table>
             <tr>
-            <th>Education</th>
-            <th>Institution</th>
-            <th>Years of Education</th>
+                <th>Education</th>
+                <th>Institution</th>
+                <th>Years of Education</th>
             </tr>
             <tr>
-            <td>Schooling</td>
-            <td>Bhashyam High school</td>
-            <td>2018-2019</td>
+                <td>Schooling</td>
+                <td>Bhashyam High school</td>
+                <td>2018-2019</td>
             </tr>
             <tr>
-            <td>Intermediate (MPC)</td>
-            <td>Sri Chaitanya educational Institution</td>
-            <td>2019-2021</td>
+                <td>Intermediate (MPC)</td>
+                <td>Sri Chaitanya educational Institution</td>
+                <td>2019-2021</td>
             </tr>
             <tr>
-            <td>Bachelor in Computer Science and Engineering</td>
-            <td>Keshav memorial institute of technology</td>
-            <td>2021-2024</td>
+                <td>Bachelor in Computer Science and Engineering</td>
+                <td>Keshav memorial institute of technology</td>
+                <td>2021-2024</td>
             </tr>
-            
         </table>
         <hr>
-
         <h2>Projects</h2>
         <ul>
-           <li>
-            <b>Clone of Apple Homepage:REACT</b>
-            <p>Created a clone of homepage of the offcial apple website using REACT</p>
-           </li> 
-           <li>
-            <b>Safe water detection:App development,Machine learning</b>
-            <p>This app allows users to track and analyze the quality of water in various sources. The app will take input from the user such as pH level, conductivity, organic compounds,
-                and total dissolved solids and gives the output of whether the water is safe to drink or not.
-            </p>
-           </li>
+            <li>
+                <b>Clone of Apple Homepage:REACT</b>
+                <p>Created a clone of homepage of the official Apple website using REACT</p>
+            </li>
+            <li>
+                <b>Safe water detection:App development,Machine learning</b>
+                <p>This app allows users to track and analyze the quality of water in various sources. The app will take input from the user such as pH level, conductivity, organic compounds,
+                    and total dissolved solids and gives the output of whether the water is safe to drink or not.
+                </p>
+            </li>
         </ul>
         <hr>
         <h2>Technical Achievements</h2>
         <ul>
-            <li>Winner of Smart India Hackthon 2023</li>
-            <li>Gold Medalist in NPTEL course- Data Science for python </li>
-            <li>Runner up in KAVACH- hackathon organised by the Recurse club of KMIT</li>
-            <li>Top 2 in leetcode biweekly coding test</li>
+            <li>Winner of Smart India Hackathon 2023</li>
+            <li>Gold Medalist in NPTEL course- Data Science for Python</li>
+            <li>Runner up in KAVACH- hackathon organized by the Recurse club of KMIT</li>
+            <li>Top 2 in Leetcode biweekly coding test</li>
         </ul>
         <h2>Non-technical Achievements</h2>
         <ul>
-            <li>Documentation incharge of Aakarshan, the art club of KMIT</li>
+            <li>Documentation in charge of Aakarshan, the art club of KMIT</li>
             <li>Part of Editorial board of Rotaract Club of KMIT</li>
             <li>Member of Project School</li>
         </ul>
         <hr>
-
         <h2>Blog</h2>
-        
+        <p>Add your blog content here.</p>
         <hr>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-        <p>91-9XXXXXXXXX<p>
-        <a href="mailto:ananyabathini37@gmail.com">ananyabathini37@gmail.com</a>
-        </section>
-        
-        
-
-
-
-    
-        
-    </body>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</body>
 </html>
